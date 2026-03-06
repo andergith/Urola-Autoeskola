@@ -10,6 +10,11 @@
         content="Sácate el carné de coche, moto (A2) o certificados profesionales (CAP, ADR) en Azpeitia. Más de 30 años formando conductores en la comarca del Urola.">
     <meta name="keywords"
         content="Autoescuela en Azpeitia, Cursos CAP Gipuzkoa, Sacar carné de moto A2 en Urola, autoescuela urola, carnet de conducir azpeitia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,6 +28,7 @@
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        logo: ['"Alfa Slab One"', 'serif'],
                     }
                 }
             }
@@ -50,7 +56,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-extrabold text-brand-urola uppercase tracking-wider">Urola Autoeskola
+                    <span class="text-xl md:text-2xl font-logo text-brand-urola uppercase tracking-normal">Urola
+                        Autoeskola</span>
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#turismos"
@@ -149,21 +156,19 @@
                 Más de 30 años formando conductores en el Urola. Turismos, Motos y Especialización Profesional.
             </p>
             <a href="https://wa.me/34608147471" target="_blank" rel="noopener noreferrer"
-                class="inline-block bg-brand-yellow text-brand-urola font-extrabold text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-all shadow-2xl hover:shadow-yellow-400/50 transform hover:-translate-y-1 mb-16">
+                class="inline-block bg-brand-yellow text-brand-urola font-extrabold text-lg px-8 py-4 rounded-full hover:bg-yellow-300 transition-all shadow-2xl hover:shadow-yellow-400/50 transform hover:-translate-y-1 mb-20 md:mb-16">
                 ¡Apúntate ahora!
             </a>
 
             <!-- Hero Feature Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <a href="#turismos"
-                    class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition-all group">
+                    class="bg-white/10 backdrop-blur-md border border-white/20 p-10 sm:p-8 md:p-10 rounded-2xl hover:bg-white/20 transition-all group">
                     <div
                         class="bg-brand-yellow/20 p-3 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                                d="M8 7h8l2 4h1a2 2 0 012 2v3a2 2 0 01-2 2h-1a2 2 0 01-2-2H7a2 2 0 01-2 2H4a2 2 0 01-2-2v-3a2 2 0 012-2h1l2-4zM6 17a1 1 0 100-2 1 1 0 000 2zm12 0a1 1 0 100-2 1 1 0 000 2z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Turismos</h3>
@@ -172,7 +177,7 @@
                 </a>
 
                 <a href="#motos"
-                    class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition-all group">
+                    class="bg-white/10 backdrop-blur-md border border-white/20 p-10 sm:p-8 md:p-10 rounded-2xl hover:bg-white/20 transition-all group">
                     <div
                         class="bg-brand-yellow/20 p-3 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -186,12 +191,12 @@
                 </a>
 
                 <a href="#profesionales"
-                    class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition-all group">
+                    class="bg-white/10 backdrop-blur-md border border-white/20 p-10 sm:p-8 md:p-10 rounded-2xl hover:bg-white/20 transition-all group">
                     <div
                         class="bg-brand-yellow/20 p-3 rounded-xl inline-block mb-4 group-hover:scale-110 transition-transform">
                         <svg class="h-8 w-8 text-brand-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Profesionales</h3>
@@ -205,7 +210,7 @@
     <!-- Sección 1: Permiso B (Turismos) -->
     <section id="turismos" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div class="lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="mb-10 lg:mb-0" data-aos="fade-right">
                     <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop"
                         alt="Coche de autoescuela moderno" class="rounded-2xl shadow-2xl object-cover h-96 w-full">
@@ -262,7 +267,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Tarjeta AM -->
                 <div
-                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
                     <div
                         class="text-brand-urola text-3xl font-black mb-4 group-hover:text-brand-yellow transition-colors">
                         AM</div>
@@ -273,7 +278,7 @@
 
                 <!-- Tarjeta A1 -->
                 <div
-                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
                     <div
                         class="text-brand-urola text-3xl font-black mb-4 group-hover:text-brand-yellow transition-colors">
                         A1</div>
@@ -284,7 +289,7 @@
 
                 <!-- Tarjeta A2 -->
                 <div
-                    class="bg-brand-urola text-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform scale-105 relative cursor-pointer">
+                    class="bg-brand-urola text-white rounded-2xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-shadow transform scale-105 relative cursor-pointer">
                     <div
                         class="absolute top-0 right-0 bg-brand-yellow text-brand-urola text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase tracking-wider">
                         Más Demandado</div>
@@ -296,7 +301,7 @@
 
                 <!-- Tarjeta A -->
                 <div
-                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
+                    class="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-brand-yellow group cursor-pointer">
                     <div
                         class="text-brand-urola text-3xl font-black mb-4 group-hover:text-brand-yellow transition-colors">
                         A</div>
@@ -319,7 +324,8 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Profesional Card 1 -->
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20" data-aos="fade-right">
+                <div class="bg-white/10 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-white/20"
+                    data-aos="fade-right">
                     <h3 class="text-2xl font-bold text-brand-yellow mb-4">Cursos CAP</h3>
                     <div class="space-y-4">
                         <div>
@@ -332,7 +338,8 @@
                 </div>
 
                 <!-- Profesional Card 2 -->
-                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20" data-aos="fade-left">
+                <div class="bg-white/10 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-white/20"
+                    data-aos="fade-left">
                     <h3 class="text-2xl font-bold text-brand-yellow mb-4">Cursos ADR</h3>
                     <div class="space-y-4">
                         <div>
@@ -373,9 +380,9 @@
                     con nosotros. ¡Tú eres el siguiente!</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:p-8">
                 <!-- Testimonio 1 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                     data-aos="fade-up" data-aos-delay="100">
                     <div class="flex text-brand-yellow mb-4">
                         <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -413,7 +420,7 @@
                 </div>
 
                 <!-- Testimonio 2 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow transform md:-translate-y-4"
+                <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow transform md:-translate-y-4"
                     data-aos="fade-up" data-aos-delay="200">
                     <div class="flex text-brand-yellow mb-4">
                         <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -451,7 +458,7 @@
                 </div>
 
                 <!-- Testimonio 3 -->
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                <div class="bg-gray-50 p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                     data-aos="fade-up" data-aos-delay="300">
                     <div class="flex text-brand-yellow mb-4">
                         <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -580,7 +587,7 @@
     <!-- Sección de Ubicación y Contacto -->
     <section id="contacto" class="py-16 md:py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
                 <!-- Info Contacto y Mapa -->
                 <div>
                     <h2 class="text-4xl font-extrabold text-brand-urola mb-8">Ponte en contacto</h2>
@@ -611,14 +618,14 @@
                     <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner relative">
                         <!-- Mapa iframe (Azpeitia focus) -->
                         <iframe class="absolute inset-0 w-full h-full mix-blend-multiply"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.446864817478!2d-2.268713284520937!3d43.18439587913988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50302bf57a7019%3A0x6bba5bfd9ec00609!2sBuztinzuriko%20Errebala%2C%203%2C%2020730%20Azpeitia%2C%20Gipuzkoa!5e0!3m2!1ses!2ses!4v1682350000000!5m2!1ses!2ses"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2909.2796377866534!2d-2.267016!3d43.182643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEwJzU3LjUiTiAywrAxNicwMS4zIlc!5e0!3m2!1ses!2ses!4v1741257451433!5m2!1ses!2ses"
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
                 <!-- Formulario -->
-                <div class="bg-white p-8 rounded-2xl shadow-2xl border border-gray-100">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-100">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">¿Preparado para empezar?</h3>
                     <form id="contactForm" class="space-y-6">
                         <div>
