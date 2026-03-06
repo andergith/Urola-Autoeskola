@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoescuela Urola en Azpeitia | Tu Permiso de Conducir</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description"
         content="Sácate el carné de coche, moto (A2) o certificados profesionales (CAP, ADR) en Azpeitia. Más de 30 años formando conductores en la comarca del Urola.">
     <meta name="keywords"
@@ -87,17 +88,64 @@
                         class="bg-brand-yellow text-brand-urola font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">¡Apúntate
                         ahora!</a>
                 </div>
+
+                <!-- Botón Menú Móvil -->
+                <div class="md:hidden flex items-center z-50">
+                    <button id="mobile-menu-button"
+                        class="text-brand-urola hover:text-brand-yellow focus:outline-none p-2 relative"
+                        aria-label="Abrir menú">
+                        <svg class="w-8 h-8 transition-transform duration-300 transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path class="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path class="close-icon hidden" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu"
+            class="fixed inset-x-0 top-20 bg-white border-t border-gray-100 shadow-2xl transition-all duration-300 transform -translate-y-full opacity-0 -z-10 flex flex-col pointer-events-none md:hidden max-h-[calc(100vh-5rem)] overflow-y-auto">
+            <div class="p-6 space-y-4 flex flex-col h-full">
+                <a href="#turismos"
+                    class="mobile-link text-xl font-extrabold text-brand-urola block py-3 border-b border-gray-50">Turismos</a>
+                <a href="#motos"
+                    class="mobile-link text-xl font-extrabold text-brand-urola block py-3 border-b border-gray-50">Motos</a>
+                <a href="#profesionales"
+                    class="mobile-link text-xl font-extrabold text-brand-urola block py-3 border-b border-gray-50">Profesionales</a>
+                <a href="#contacto"
+                    class="mobile-link text-xl font-extrabold text-brand-urola block py-3 border-b border-gray-50">Contacto</a>
+
+                <div class="pt-4 flex items-center justify-between">
+                    <span class="text-gray-500 font-medium">Idioma:</span>
+                    <div class="flex space-x-4 bg-gray-50 rounded-full px-4 py-2">
+                        <a href="index.html" class="font-black text-brand-urola">ES</a>
+                        <span class="text-gray-300">|</span>
+                        <a href="eu.html" class="font-medium text-gray-500">EU</a>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/34608147471" target="_blank" rel="noopener noreferrer"
+                    class="mt-8 text-center bg-brand-yellow text-brand-urola font-black text-lg px-6 py-4 rounded-xl shadow-lg active:scale-95 transition-transform block w-full">
+                    ¡Apúntate ahora!
+                </a>
+            </div>
+        </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-bg min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white" data-aos="fade-up">
-            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in-up">
-                Tu libertad y tu futuro profesional <br><span class="text-brand-yellow">empiezan en Azpeitia</span>
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in-up leading-tight">
+                Tu libertad y tu futuro profesional <br class="hidden sm:block"><span class="text-brand-yellow">empiezan
+                    en Azpeitia</span>
             </h1>
-            <p class="mt-4 text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 mb-10">
+            <p class="mt-4 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 mb-10 leading-relaxed">
                 Más de 30 años formando conductores en el Urola. Turismos, Motos y Especialización Profesional.
             </p>
             <a href="https://wa.me/34608147471" target="_blank" rel="noopener noreferrer"
@@ -155,7 +203,7 @@
     </section>
 
     <!-- Sección 1: Permiso B (Turismos) -->
-    <section id="turismos" class="py-24 bg-white">
+    <section id="turismos" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                 <div class="mb-10 lg:mb-0" data-aos="fade-right">
@@ -203,7 +251,7 @@
     </section>
 
     <!-- Sección 2: Zona Motos -->
-    <section id="motos" class="py-24 bg-gray-50">
+    <section id="motos" class="py-16 md:py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-extrabold text-brand-urola mb-4">Siente la libertad: Zona Motos</h2>
@@ -261,7 +309,7 @@
     </section>
 
     <!-- Sección 3: CAP y ADR (Profesionales) -->
-    <section id="profesionales" class="py-24 bg-brand-urola text-white overflow-hidden">
+    <section id="profesionales" class="py-16 md:py-24 bg-brand-urola text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-extrabold text-white mb-4">Especialización para Profesionales</h2>
@@ -317,7 +365,7 @@
     </section>
 
     <!-- Sección: Testimonios -->
-    <section class="py-24 bg-white overflow-hidden">
+    <section class="py-16 md:py-24 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-extrabold text-brand-urola mb-4">Nuestros alumnos hablan por nosotros</h2>
@@ -444,7 +492,7 @@
     </section>
 
     <!-- Sección: FAQ -->
-    <section class="py-24 bg-gray-50 overflow-hidden">
+    <section class="py-16 md:py-24 bg-gray-50 overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-extrabold text-brand-urola mb-4">Preguntas Frecuentes</h2>
@@ -530,7 +578,7 @@
     </section>
 
     <!-- Sección de Ubicación y Contacto -->
-    <section id="contacto" class="py-24 bg-white relative">
+    <section id="contacto" class="py-16 md:py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- Info Contacto y Mapa -->
@@ -850,6 +898,38 @@
             duration: 800,
             once: true,
             offset: 100,
+        });
+
+        // Menú Móvil Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+            const iconMenu = btn.querySelector('.menu-icon');
+            const iconClose = btn.querySelector('.close-icon');
+
+            function toggleMenu() {
+                const isOpen = !menu.classList.contains('-translate-y-full');
+
+                if (isOpen) {
+                    menu.classList.add('-translate-y-full', 'opacity-0', '-z-10', 'pointer-events-none');
+                    menu.classList.remove('z-40');
+                    iconMenu.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                    document.body.style.overflow = '';
+                } else {
+                    menu.classList.remove('-translate-y-full', 'opacity-0', '-z-10', 'pointer-events-none');
+                    menu.classList.add('z-40');
+                    iconMenu.classList.add('hidden');
+                    iconClose.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+                }
+            }
+
+            btn.addEventListener('click', toggleMenu);
+
+            menu.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
         });
     </script>
 </body>
