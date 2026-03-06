@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoescuela Urola en Azpeitia | Tu Permiso de Conducir</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="description"
         content="Sácate el carné de coche, moto (A2) o certificados profesionales (CAP, ADR) en Azpeitia. Más de 30 años formando conductores en la comarca del Urola.">
     <meta name="keywords"
@@ -589,7 +589,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
                 <!-- Info Contacto y Mapa -->
-                <div>
+                <div class="flex flex-col h-full">
                     <h2 class="text-4xl font-extrabold text-brand-urola mb-8">Ponte en contacto</h2>
                     <ul class="space-y-6 text-lg text-gray-600 mb-8">
                         <li class="flex items-start">
@@ -615,90 +615,48 @@
                         </li>
                     </ul>
 
-                    <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner relative">
+                    <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner relative mt-auto">
                         <!-- Mapa iframe (Azpeitia focus) -->
                         <iframe class="absolute inset-0 w-full h-full mix-blend-multiply"
-                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2909.2796377866534!2d-2.267016!3d43.182643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEwJzU3LjUiTiAywrAxNicwMS4zIlc!5e0!3m2!1ses!2ses!4v1741257451433!5m2!1ses!2ses"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2660.6934891463607!2d-2.266175!3d43.183797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51cd0360e92ef7%3A0x91f821b9e14693c7!2sUrola%20Autoeskola!5e1!3m2!1ses!2ses!4v1772798293631!5m2!1ses!2ses"
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
-                <!-- Formulario -->
-                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-100">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">¿Preparado para empezar?</h3>
-                    <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-urola focus:ring-brand-urola sm:text-sm py-3 px-4 border bg-gray-50"
-                                placeholder="Tu nombre">
-                            <p id="error-nombre" class="text-red-500 text-xs mt-1 hidden">Por favor, introduce tu
-                                nombre.</p>
-                        </div>
+                <!-- Mapa Circuito Prácticas -->
+                <div class="flex flex-col h-full">
+                    <h3 class="text-3xl font-extrabold text-brand-urola mb-6 flex items-center">
+                        <svg class="h-8 w-8 text-brand-yellow mr-3" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1" />
+                        </svg>
+                        Circuito de Prácticas
+                    </h3>
 
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Correo
-                                electrónico</label>
-                            <input type="email" id="email" name="email"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-urola focus:ring-brand-urola sm:text-sm py-3 px-4 border bg-gray-50"
-                                placeholder="tu@email.com">
-                            <p id="error-email" class="text-red-500 text-xs mt-1 hidden">Por favor, introduce un correo
-                                electrónico válido.</p>
-                        </div>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-brand-yellow mt-1 mr-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Aquí se hacen las prácticas y el examen de moto y camión<br><span
+                                class="font-bold text-gray-800">Azpeitia</span>,
+                            Gipuzkoa</span>
+                    </li>
 
-                        <div>
-                            <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-urola focus:ring-brand-urola sm:text-sm py-3 px-4 border bg-gray-50"
-                                placeholder="600 000 000">
-                            <p id="error-telefono" class="text-red-500 text-xs mt-1 hidden">Por favor, introduce un
-                                teléfono válido.</p>
-                        </div>
-
-                        <div>
-                            <label for="permiso" class="block text-sm font-medium text-gray-700">Permiso que te
-                                interesa</label>
-                            <select id="permiso" name="permiso"
-                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-urola focus:ring-brand-urola sm:text-sm py-3 px-4 border bg-gray-50">
-                                <option value="">Selecciona una opción...</option>
-                                <option value="B">Permiso B (Turismo)</option>
-                                <option value="AM">Permiso AM (Ciclomotor)</option>
-                                <option value="A1">Permiso A1 (Moto hasta 125cc)</option>
-                                <option value="A2">Permiso A2 (Moto potencia limitada)</option>
-                                <option value="A">Permiso A (Moto sin límite)</option>
-                                <option value="CAP">Cursos CAP</option>
-                                <option value="ADR">Cursos ADR</option>
-                                <option value="OTRO">Otra consulta</option>
-                            </select>
-                            <p id="error-permiso" class="text-red-500 text-xs mt-1 hidden">Por favor, selecciona un
-                                permiso.</p>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-bold text-brand-urola bg-brand-yellow hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-yellow transition-all">
-                            Enviar formulario
-                        </button>
-
-                        <div id="success-msg" class="hidden rounded-md bg-green-50 p-4 mt-4">
-                            <div class="flex">
-                                <div class="flex-shrink-0">
-                                    <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                                <div class="ml-3">
-                                    <p class="text-sm font-medium text-green-800">¡Mensaje enviado con éxito! Te
-                                        contactaremos pronto.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner relative mt-auto">
+                        <iframe class="absolute inset-0 w-full h-full mix-blend-multiply"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2291.2727177699912!2d-2.2864658667549675!3d43.17440288392684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEwJzI4LjMiTiAywrAxNycxNC43Ilc!5e1!3m2!1ses!2ses!4v1772796738326!5m2!1ses!2ses"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- CTA Final -->
@@ -828,64 +786,7 @@
         </div>
     </footer>
 
-    <!-- Script de Validaciones y Smooth Scroll -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Reset errors
-            document.querySelectorAll('.text-red-500').forEach(el => el.classList.add('hidden'));
-
-            let isValid = true;
-
-            const nombre = document.getElementById('nombre').value.trim();
-            if (!nombre) {
-                document.getElementById('error-nombre').classList.remove('hidden');
-                isValid = false;
-            }
-
-            const email = document.getElementById('email').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email || !emailRegex.test(email)) {
-                document.getElementById('error-email').classList.remove('hidden');
-                isValid = false;
-            }
-
-            const telefono = document.getElementById('telefono').value.trim();
-            if (!telefono || telefono.length < 9) {
-                document.getElementById('error-telefono').classList.remove('hidden');
-                isValid = false;
-            }
-
-            const permiso = document.getElementById('permiso').value;
-            if (!permiso) {
-                document.getElementById('error-permiso').classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (isValid) {
-                // Simular envío
-                const btn = this.querySelector('button[type="submit"]');
-                const originalText = btn.innerText;
-                btn.innerText = 'Enviando...';
-                btn.disabled = true;
-                btn.classList.add('opacity-75');
-
-                setTimeout(() => {
-                    document.getElementById('success-msg').classList.remove('hidden');
-                    this.reset();
-                    btn.innerText = originalText;
-                    btn.disabled = false;
-                    btn.classList.remove('opacity-75');
-
-                    // Ocultar mensaje después de 5s
-                    setTimeout(() => {
-                        document.getElementById('success-msg').classList.add('hidden');
-                    }, 5000);
-                }, 1500);
-            }
-        });
-    </script>
+    <!-- Scripts -->
     <!-- Botón de WhatsApp -->
     <a href="https://wa.me/34608147471" target="_blank" rel="noopener noreferrer"
         class="fixed bottom-6 right-6 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all active:scale-95 flex items-center justify-center group"
